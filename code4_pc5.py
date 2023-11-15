@@ -17,8 +17,11 @@ print(temp)
 print(temp_new)
 
 total = 0
-for data in temp:
-    if  isinstance(data, float):
-        total += data
+error = 0
+for data in temp_new:
+    if  isinstance(data, str):
+        error += 1
+        continue
+    total += data
 
-print(f"平均気温：{total / (len(temp_new) - 1)}")
+print(f"平均気温：{total / (len(temp_new) - error):.2f}")

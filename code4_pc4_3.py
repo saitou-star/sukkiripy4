@@ -8,3 +8,4 @@ for k in range(9):
             break
 
         print(f"{k + 1} * {y + 1} = {ans}")
+        print()

@@ -17,6 +17,5 @@ print(ratios)
 
 
 for count in range(len(ratios)):
-    ratios[count] = int(ratios[count] * 1000) / 1000
-
+    ratios[count] = int(ratios[count] * 1000) / 1000  # /で割るとfloat型。//が整数の値になる
 print(ratios)
